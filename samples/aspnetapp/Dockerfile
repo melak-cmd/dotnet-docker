@@ -19,4 +19,4 @@ COPY --from=build /app ./
 ENTRYPOINT ["dotnet", "aspnetapp.dll"]
 
 # Run container by default as user with id 1001 (default)
- 27 USER 1001
+USER 1001
