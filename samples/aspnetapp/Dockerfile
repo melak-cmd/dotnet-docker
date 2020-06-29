@@ -17,3 +17,6 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build /app ./
 ENTRYPOINT ["dotnet", "aspnetapp.dll"]
+
+# Run container by default as user with id 1001 (default)
+ 27 USER 1001
